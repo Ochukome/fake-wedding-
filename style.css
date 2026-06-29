@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #050608;
+}
+
+/* Background image popping config */
+.background-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('wedding picture.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.65) contrast(1.10) saturate(1.15);
+    z-index: 0;
+}
+
+.school-logo-frame {
+    width: 5.5rem;
+    height: 5.5rem;
+    background: rgba(10, 11, 16, 0.5);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 0.6rem;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.gala-badge {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: #E2C385;
+    background: rgba(10, 11, 16, 0.7);
+    border: 1px solid rgba(226, 195, 133, 0.2);
+    padding: 0.65rem 1.4rem;
+    border-radius: 9999px;
+    backdrop-filter: blur(12px);
+}
+
+.content-card {
+    background: rgba(10, 11, 16, 0.88);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 2.25rem;
+    padding: 2.5rem 2.25rem;
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.9);
+    animation: cinematicEntrance 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@media (max-width: 640px) {
+    .content-card {
+        padding: 2.25rem 1.5rem;
+    }
+}
+
+/* Premium Gold Gradient Pillow Shape */
+.btn-luxury-gold {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    background: linear-gradient(180deg, #EAD099 0%, #CFA55C 45%, #A77E36 100%);
+    border: 1px solid #F3E5C8;
+    color: #12100B;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border-radius: 9999px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 12px 28px -6px rgba(167, 126, 54, 0.45);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-luxury-gold:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 16px 32px -4px rgba(167, 126, 54, 0.55);
+}
+
+/* Tightened Flourish Elements */
+.flourish-divider-top {
+    width: 120px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 35' fill='none'%3E%3Cpath d='M10 17.5H50M120 17.5H80' stroke='%23CFA55C' stroke-width='1.5' stroke-linecap='round'/%3E%3Ccircle cx='10' cy='17.5' r='2' fill='%23CFA55C'/%3E%3Ccircle cx='120' cy='17.5' r='2' fill='%23CFA55C'/%3E%3Cpath d='M65 5C61 11 57 17.5 65 30C73 17.5 69 11 65 5Z' stroke='%23CFA55C' stroke-width='1.5'/%3E%3Cpath d='M65 11C63 14 61 17.5 65 24C69 17.5 67 14 65 11Z' fill='%23CFA55C'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flourish-heart-divider {
+    width: 160px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 25' fill='none'%3E%3Cpath d='M10 12.5H75M170 12.5H105' stroke='%23CFA55C' stroke-width='1' stroke-linecap='round'/%3E%3Ccircle cx='10' cy='12.5' r='1.5' fill='%23CFA55C'/%3E%3Ccircle cx='170' cy='12.5' r='1.5' fill='%23CFA55C'/%3E%3Ccircle cx='79' cy='12.5' r='2' fill='%23CFA55C'/%3E%3Ccircle cx='101' cy='12.5' r='2' fill='%23CFA55C'/%3E%3Cpath d='M90 16.5L88.8 15.4C84.6 11.6 81.8 9.1 81.8 6C81.8 3.5 83.8 1.5 86.3 1.5C87.7 1.5 89.1 2.2 90 3.2C90.9 2.2 92.3 1.5 93.7 1.5C96.2 1.5 98.2 3.5 98.2 6C98.2 9.1 95.4 11.6 91.2 15.4L90 16.5Z' stroke='%23CFA55C' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 1.15rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(5, 6, 10, 0.6);
+    color: #ffffff;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.input-field:focus {
+    border-color: #CFA55C;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(207, 165, 92, 0.08);
+}
+
+.drum-container {
+    position: relative;
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-outer {
+    position: absolute;
+    inset: 0;
+    border: 3px solid transparent;
+    border-top-color: #CFA55C;
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    animation: spin 1.5s linear infinite;
+}
+
+.spinner-inner {
+    position: absolute;
+    inset: 0.75rem;
+    border: 1.5px solid transparent;
+    border-bottom-color: #CFA55C;
+    border-left-color: rgba(255, 255, 255, 0.05);
+    border-radius: 9999px;
+    animation: spin 1s linear infinite reverse;
+}
+
+.drum-emoji {
+    font-size: 2.5rem;
+}
+
+/* Premium Reveal Card Design with Glass Light Shimmer */
+.reveal-card {
+    position: relative;
+    width: 100%;
+    border-radius: 2.25rem;
+    padding: 3rem 2.25rem;
+    box-shadow: 0 50px 100px -25px rgba(0, 0, 0, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    overflow: hidden;
+    animation: luxuryEntrance 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Clean, sophisticated sweep overlay */
+.reveal-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.08), transparent);
+    transform: skewX(-25deg);
+    animation: glassShimmer 2.5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.reveal-card.bride-theme {
+    background: linear-gradient(135deg, rgba(64, 12, 12, 0.95) 0%, rgba(20, 5, 5, 0.98) 100%);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 40px 80px -15px rgba(64, 12, 12, 0.4), 0 50px 100px -25px rgba(0, 0, 0, 0.95);
+}
+
+.reveal-card.groom-theme {
+    background: linear-gradient(135deg, rgba(12, 18, 48, 0.95) 0%, rgba(5, 6, 20, 0.98) 100%);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 40px 80px -15px rgba(12, 18, 48, 0.4), 0 50px 100px -25px rgba(0, 0, 0, 0.95);
+}
+
+/* Premium Sparkle Elements */
+.premium-sparkle {
+    font-size: 1.5rem;
+    color: #E2C385;
+    opacity: 0;
+    animation: sparkleFade 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.vibe-box {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    width: 100%;
+    padding: 1.15rem 1.5rem;
+    background-color: #12b886;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 1.15rem;
+    box-shadow: 0 12px 24px -8px rgba(18, 184, 134, 0.3);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.25s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #0ca678;
+}
+
+/* High-End Motion Curves instead of fast AI bounces */
+@keyframes cinematicEntrance {
+    from { opacity: 0; transform: translateY(20px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes luxuryEntrance {
+    from { opacity: 0; transform: translateY(30px) scale(0.95); filter: blur(4px); }
+    to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes glassShimmer {
+    from { left: -150%; }
+    to { left: 150%; }
+}
+
+@keyframes sparkleFade {
+    0% { opacity: 0; transform: scale(0.6) rotate(-15deg); }
+    50% { opacity: 1; transform: scale(1.1) rotate(0deg); }
+    100% { opacity: 0.9; transform: scale(1) rotate(5deg); }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
