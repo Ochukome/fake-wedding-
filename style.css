@@ -10,7 +10,7 @@ body {
 .background-overlay {
     position: absolute;
     inset: 0;
-    background-image: url('wedding picture.jfif');
+    background-image: url('Wedding picture.jfif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
